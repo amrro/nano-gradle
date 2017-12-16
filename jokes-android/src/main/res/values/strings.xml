@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">jokes-android</string>
+    <string name="title_activity_joke_display">Joke</string>
+    <string name="joke_load_error">Cannot load the joke</string>
+</resources>
