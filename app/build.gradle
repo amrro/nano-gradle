@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.2"
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -40,4 +40,11 @@ dependencies {
     }
     compile 'com.google.http-client:google-http-client-android:1.23.0'
     compile 'com.google.api-client:google-api-client:1.23.0'
+
+    // Required for local unit tests
+    testImplementation 'junit:junit:4.12'
+
+    // Required for instrumented tests
+    androidTestCompile 'com.android.support:support-annotations:27.0.2'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
 }
