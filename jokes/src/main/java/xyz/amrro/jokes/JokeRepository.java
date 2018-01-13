@@ -22,8 +22,12 @@ public final class JokeRepository {
         jokes.add("My attitude isn’t bad. It’s in beta.");
     }
 
-    public String generate() {
+    public String getJoke() {
         final int rand = new Random().nextInt(jokes.size());
         return jokes.get(rand);
+    }
+
+    public static String generateJoke() {
+        return new JokeRepository().getJoke();
     }
 }
